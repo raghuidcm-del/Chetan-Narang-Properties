@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetan Narang Properties | Luxury Real Estate Consultant Pitampura</title>
+    <meta name="description" content="Premium real estate consultancy by Chetan Narang. Buy, sell, rent, and invest in luxury residential properties in Pitampura and North West Delhi.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #000000;
+            --secondary: #111111;
+            --accent: #D4AF37;
+            --accent-light: #F3E5AB;
+            --text-light: #FFFFFF;
+            --text-dark: #CCCCCC;
+            --text-muted: #888888;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-hover: rgba(255, 255, 255, 0.08);
+            --font-serif: 'Cormorant Garamond', serif;
+            --font-sans: 'Montserrat', sans-serif;
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text-light);
+            font-family: var(--font-sans);
+            font-size: 15px;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .section {
+            padding: 140px 0;
+            position: relative;
+        }
+
+        .gold-text {
+            color: var(--accent);
+            font-family: var(--font-serif);
+            font-style: italic;
+        }
+
+        .section-title-wrapper {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-subtitle {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--accent);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: var(--text-light);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: var(--accent);
+            margin: 25px auto 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 36px;
+            font-family: var(--font-sans);
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--accent);
+            border-color: var(--accent);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.1);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--glass-border);
+            background: var(--glass);
+            color: var(--text-light);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: var(--text-light);
+            color: var(--primary);
+            border-color: var(--text-light);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            border: none;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-floating {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            z-index: 999;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .whatsapp-floating:hover {
+            transform: translateY(-5px) scale(1.05);
+            background-color: #20ba5a;
+        }
+
+        /* Glassmorphism Card Style */
+        .glass-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .glass-card:hover {
+            background: var(--glass-hover);
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-5px);
+        }
+
+        /* Header / Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        header.scrolled {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 40px;
+            transition: var(--transition);
+        }
+
+        header.scrolled .nav-container {
+            padding: 10px 40px;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: var(--text-light);
+        }
+
+        .logo h1 {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .logo h1 span {
+            color: var(--accent);
+        }
+
+        .logo p {
+            font-family: var(--font-sans);
+            font-size: 9px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-family: var(--font-sans);
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            padding: 10px 20px;
+            font-size: 11px;
+        }
+
+        .menu-toggle {
+            display: none;
+            color: var(--text-light);
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)), 
+                        url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-tagline {
+            font-family: var(--font-sans);
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            color: var(--accent);
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        .hero-title {
+            font-family: var(--font-serif);
+            font-size: 64px;
+            font-weight: 300;
+            line-height: 1.15;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-sans);
+            font-size: 18px;
+            font-weight: 300;
+            color: var(--text-dark);
+            margin-bottom: 45px;
+            max-width: 650px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* About Section */
+        #about {
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-text-content h3 {
+            font-family: var(--font-serif);
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .about-text-content p {
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 45px;
+            border-top: 1px solid var(--glass-border);
+            padding-top: 35px;
+        }
+
+        .stat-item h4 {
+            font-family: var(--font-serif);
+            font-size: 40px;
+            font-weight: 400;
+            color: var(--accent);
+        }
+
+        .stat-item p {
+            font-family: var(--font-sans);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+        }
+
+        .about-image-main {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            border: 1px solid var(--glass-border);
+        }
+
+        .about-image-overlay {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 240px;
+            padding: 30px;
+            background: rgba(17, 17, 17, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .about-image-overlay p {
+            font-family: var(--font-serif);
+            font-size: 20px;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        /* Services Section */
+        #services {
+            background-color: var(--secondary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            padding: 50px 40px;
+            text-align: left;
+        }
+
+        .service-icon {
+            font-size: 36px;
+            color: var(--accent);
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        .service-card h3 {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .service-card p {
+            color: var(--text-dark);
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        /* Featured Properties */
+        #properties {
+            background-color: var(--primary);
+        }
+
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .property-card {
+            overflow: hidden;
+        }
+
+        .property-image-container {
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .property-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .property-card:hover .property-image {
+            transform: scale(1.08);
+        }
+
+        .property-tag {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 6px 16px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+
+        .property-details {
+            padding: 30px;
+        }
+
+        .property-price {
+            font-family: var(--font-serif);
+            font-size: 26px;
+            color: var(--accent);
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .property-title {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        .property-location {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .property-specs {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--glass-border);
+            padding-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .spec-item {
+            font-size: 12px;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .spec-item i {
+            color: var(--accent);
+        }
+
+        .property-btn {
+            width: 100%;
+            font-size: 11px;
+            padding: 12px 20px;
+        }
+
+        /* Why Choose Us Section */
+        #why-choose-us {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            background-attachment: fixed;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .why-card {
+            padding: 40px;
+            text-align: center;
+            border-top: 2px solid transparent;
+        }
+
+        .why-card:hover {
+            border-top-color: var(--accent);
+        }
+
+        .why-icon-box {
+            width: 70px;
+            height: 70px;
+            background: rgba(214, 175, 55, 0.05);
+            border: 1px solid rgba(214, 175, 55, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 24px;
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .why-card:hover .why-icon-box {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        .why-card h3 {
+            font-family: var(--font-serif);
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .why-card p {
+            color: var(--text-dark);
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        /* Investment Opportunities */
+        #investments {
+            background-color: var(--secondary);
+        }
+
+        .invest-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .invest-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border: 1px solid var(--glass-border);
+        }
+
+        .invest-content h3 {
+            font-family: var(--font-serif);
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+
+        .invest-content p {
+            color: var(--text-dark);
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 35px;
+        }
+
+        .market-badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .market-badge {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 12px 24px;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Meet Our Team */
+        #team {
+            background-color: var(--primary);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .team-card {
+            text-align: center;
+            overflow: hidden;
+            padding-bottom: 30px;
+        }
+
+        .team-img-wrapper {
+            height: 380px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--glass-border);
+            position: relative;
+            background: #222;
+        }
+
+        .team-img-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #111, #222);
+        }
+
+        .team-img-placeholder i {
+            font-size: 80px;
+            color: rgba(255, 255, 255, 0.05);
+        }
+
+        .team-card h3 {
+            font-family: var(--font-serif);
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .team-role {
+            font-family: var(--font-sans);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent);
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            background-color: var(--secondary);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            padding: 50px 40px;
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 24px;
+            color: rgba(214, 175, 55, 0.2);
+            margin-bottom: 25px;
+        }
+
+        .testimonial-text {
+            font-family: var(--font-serif);
+            font-size: 18px;
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .client-info h4 {
+            font-family: var(--font-sans);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--text-light);
+        }
+
+        .client-info p {
+            font-size: 11px;
+            color: var(--accent);
+            margin-top: 2px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Booking Form Section */
+        #booking {
+            background: linear-gradient(to bottom, var(--secondary), var(--primary));
+        }
+
+        .booking-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px;
+        }
+
+        .booking-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group-full {
+            grid-column: span 2;
+        }
+
+        .form-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .form-control {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--glass-border);
+            padding: 16px;
+            color: white;
+            font-family: var(--font-sans);
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        select.form-control option {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .booking-form .btn {
+            grid-column: span 2;
+            margin-top: 15px;
+            padding: 18px;
+        }
+
+        /* FAQ Section */
+        #faq {
+            background-color: var(--primary);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--glass-border);
+            padding: 25px 0;
+        }
+
+        .faq-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-question {
+            font-family: var(--font-serif);
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .faq-icon {
+            font-size: 14px;
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .faq-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+        }
+
+        .faq-answer {
+            padding-top: 15px;
+            color: var(--text-dark);
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-body {
+            max-height: 1000px;
+            transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: var(--secondary);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+        }
+
+        .contact-info-panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-details-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .contact-item-icon {
+            font-size: 20px;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        .contact-item-text h4 {
+            font-family: var(--font-sans);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+        }
+
+        .contact-item-text p, .contact-item-text a {
+            font-family: var(--font-serif);
+            font-size: 22px;
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .contact-item-text a:hover {
+            color: var(--accent);
+        }
+
+        .contact-buttons-wrapper {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 450px;
+            background: #151515;
+            border: 1px solid var(--glass-border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            padding: 60px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-copyright {
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1100px) {
+            .services-grid, .properties-grid, .why-grid, .team-grid, .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .about-grid, .invest-container, .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            .about-image-main {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                background: rgba(0, 0, 0, 0.95);
+            }
+            .nav-container {
+                padding: 15px 25px;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--secondary);
+                flex-direction: column;
+                padding: 40px 0;
+                gap: 25px;
+                border-bottom: 1px solid var(--glass-border);
+                display: none;
+            }
+            .nav-menu.active {
+                display: flex;
+            }
+            .hero-title {
+                font-size: 42px;
+            }
+            .section {
+                padding: 90px 0;
+            }
+            .section-title {
+                font-size: 36px;
+            }
+            .services-grid, .properties-grid, .why-grid, .team-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            .booking-container {
+                padding: 30px 20px;
+            }
+            .booking-form {
+                grid-template-columns: 1fr;
+            }
+            .booking-form .btn, .form-group-full {
+                grid-column: span 1;
+            }
+            .container {
+                padding: 0 24px;
+            }
+            .whatsapp-floating {
+                bottom: 25px;
+                right: 25px;
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919810348888" class="whatsapp-floating" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Top Navigation Header -->
+    <header id="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <h1>Chetan Narang<span>.</span></h1>
+                <p>Properties</p>
+            </a>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu-list">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#properties" class="nav-link">Properties</a></li>
+                <li><a href="#investments" class="nav-link">Investments</a></li>
+                <li><a href="#team" class="nav-link">Our Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#booking" class="btn btn-primary nav-cta">Book Visit</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tagline">Sale • Purchase • Renting • Collaborators</span>
+                <h2 class="hero-title">Luxury Real Estate Solutions For <span class="gold-text">Smart Buyers</span> & Investors</h2>
+                <p class="hero-subtitle">Helping discerning clients beautifully buy, sell, rent, and invest in ultra-premium residential environments throughout Pitampura and beyond.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Schedule Consultation</a>
+                    <a href="https://wa.me/919810348888" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp" style="margin-right: 8px; color: #25D366;"></i> WhatsApp Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <span class="section-subtitle">The Premier Luxury Brokerage</span>
+                    <h3>Architects of Elegant Property Asset Management</h3>
+                    <p>Chetan Narang Properties stands as a premier advisory powerhouse in luxury real estate ecosystems. We curate customized acquisition and liquidation pathways for sophisticated high-net-worth clients, ensuring seamless capital deployment into premium brick and mortar spaces.</p>
+                    <p>Rooted in Pitampura, New Delhi, our localized market intelligence provides unmatched transparency, allowing our clientele to secure highly-coveted residential properties with ultimate transactional confidence.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>₹100Cr+</h4>
+                            <p>Assets Advised</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>15+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Discretion Guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Luxury Real Estate Pitampura" class="about-image-main">
+                    <div class="about-image-overlay">
+                        <p>"Redefining institutional standards in elite residential advisory across North West Delhi."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Bespoke Suite</span>
+                <h2 class="section-title">Our Strategic Asset Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <i class="fas fa-handshake service-icon"></i>
+                    <h3>Luxury Property Buying</h3>
+                    <p>Bespoke matching systems designed to connect premium clients with elite residential estates tailored exactly to lifestyle parameters.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i class="fas fa-sign-hanging service-icon"></i>
+                    <h3>Property Sales</h3>
+                    <p>Sophisticated multi-tier global marketing setups engineered to yield maximum asset valuation for your ultra-premium listings.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i class="fas fa-key service-icon"></i>
+                    <h3>Property Renting</h3>
+                    <p>High-end corporate tenancy integration systems managing luxury rentals effortlessly for premier multi-market landlords.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h3>Investment Consulting</h3>
+                    <p>Data-backed micro-market research providing smart predictive algorithms to identify high-yield property ventures.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i class="fas fa-building service-icon"></i>
+                    <h3>Property Development</h3>
+                    <p>End-to-end synergy solutions linking marquee land developers with landholders to maximize spatial optimization blueprints.</p>
+                </div>
+                <div class="service-card glass-card">
+                    <i class="fas fa-home service-icon"></i>
+                    <h3>Residential Consulting</h3>
+                    <p>Granular architectural and structural evaluation methodologies ensuring complete regulatory harmony for custom luxury real estate assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section id="properties" class="section">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Curated Collection</span>
+                <h2 class="section-title">Signature Residences</h2>
+            </div>
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card glass-card">
+                    <div class="property-image-container">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Ultra Luxury Villa" class="property-image">
+                        <span class="property-tag">For Sale</span>
+                    </div>
+                    <div class="property-details">
+                        <div class="property-price">Price On Request</div>
+                        <h3 class="property-title">The Grand Boulevard Mansion</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> Pitampura, New Delhi</div>
+                        <div class="property-specs">
+                            <span class="spec-item"><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span class="spec-item"><i class="fas fa-bath"></i> 6 Baths</span>
+                            <span class="spec-item"><i class="fas fa-vector-square"></i> 4,500 Sq.Ft</span>
+                        </div>
+                        <a href="#booking" class="btn btn-outline property-btn">View Private Details</a>
+                    </div>
+                </div>
+                <!-- Property 2 -->
+                <div class="property-card glass-card">
+                    <div class="property-image-container">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80" alt="Super Luxury Penthouse" class="property-image">
+                        <span class="property-tag">Premium Rent</span>
+                    </div>
+                    <div class="property-details">
+                        <div class="property-price">₹2,50,000 / Mo</div>
+                        <h3 class="property-title">Skyline Horizon Penthouse</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> North West Delhi</div>
+                        <div class="property-specs">
+                            <span class="spec-item"><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span class="spec-item"><i class="fas fa-bath"></i> 5 Baths</span>
+                            <span class="spec-item"><i class="fas fa-vector-square"></i> 3,800 Sq.Ft</span>
+                        </div>
+                        <a href="#booking" class="btn btn-outline property-btn">View Private Details</a>
+                    </div>
+                </div>
+                <!-- Property 3 -->
+                <div class="property-card glass-card">
+                    <div class="property-image-container">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt="Bespoke Collaboration Project" class="property-image">
+                        <span class="property-tag">Collaboration</span>
+                    </div>
+                    <div class="property-details">
+                        <div class="property-price">Investment Grade</div>
+                        <h3 class="property-title">Ultra Luxury Builder Floor Concept</h3>
+                        <div class="property-location"><i class="fas fa-map-marker-alt"></i> Pitampura, New Delhi</div>
+                        <div class="property-specs">
+                            <span class="spec-item"><i class="fas fa-bed"></i> 4 BHK</span>
+                            <span class="spec-item"><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span class="spec-item"><i class="fas fa-vector-square"></i> 3,200 Sq.Ft</span>
+                        </div>
+                        <a href="#booking" class="btn btn-outline property-btn">View Private Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="section">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Our Competitive Edge</span>
+                <h2 class="section-title">Architectural Value Framework</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card glass-card">
+                    <div class="why-icon-box"><i class="fas fa-user-tie"></i></div>
+                    <h3>Personalized Property Guidance</h3>
+                    <p>We reject cookie-cutter approaches, creating specialized acquisition profiles tailored specifically around your unique family or corporate timeline.</p>
+                </div>
+                <div class="why-card glass-card">
+                    <div class="why-icon-box"><i class="fas fa-chess-knight"></i></div>
+                    <h3>Local Market Expertise</h3>
+                    <p>Unmatched historical understanding of zoning rules, transactional histories, and off-market deal patterns in Pitampura and neighboring zones.</p>
+                </div>
+                <div class="why-card glass-card">
+                    <div class="why-icon-box"><i class="fas fa-network-wired"></i></div>
+                    <h3>Premium Property Network</h3>
+                    <p>Instant pipeline connection to private multi-generational land owners, offering access to high-value transactions before they reach public portals.</p>
+                </div>
+                <div class="why-card glass-card">
+                    <div class="why-icon-box"><i class="fas fa-coins"></i></div>
+                    <h3>Investment Advisory</h3>
+                    <p>Rigorous, math-oriented yield-to-risk balancing strategies crafted specifically for long-term real estate capital compounding goals.</p>
+                </div>
+                <div class="why-card glass-card">
+                    <div class="why-icon-box"><i class="fas fa-eye"></i></div>
+                    <h3>Transparent Deal Process</h3>
+                    <p>Absolute clarity at every step. We operate with strict, transparent legal documentation structures designed to completely secure your hard-earned investments.</p>
+                </div>
+                <div class="why-card glass-card">
+                    <div class="why-icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <h3>End-to-End Support</h3>
+                    <p>Complete lifecycle management covering structural due diligence, financial processing paperwork, and final lifestyle fit-out coordination.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Opportunities Section -->
+    <section id="investments" class="section">
+        <div class="container">
+            <div class="invest-container">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="High Growth Real Estate" class="invest-image">
+                </div>
+                <div class="invest-content">
+                    <span class="section-subtitle">Alpha Generation</span>
+                    <h3>High-Yield Opportunities in Premium Hubs</h3>
+                    <p>North West Delhi, spearheaded by Pitampura's rapid premium growth, remains an incredibly resilient real estate market for wealth compounding. Driven by major infrastructure modernizations, prime local plots are continually showing strong year-on-year capital appreciation. Our team maps out these sub-sectors to find mispriced assets ready to deliver high investment yields.</p>
+                    <div class="market-badge-container">
+                        <span class="market-badge">Pitampura Core</span>
+                        <span class="market-badge">North West Delhi Luxury</span>
+                        <span class="market-badge">Premium Residential Markets</span>
+                    </div>
+                    <a href="#booking" class="btn btn-primary">Receive Investor Kit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Leadership Matrix</span>
+                <h2 class="section-title">Senior Brokerage Advisors</h2>
+            </div>
+            <div class="team-grid">
+                <!-- Leader 1 -->
+                <div class="team-card glass-card">
+                    <div class="team-img-wrapper">
+                        <div class="team-img-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <h3>Chetan Narang</h3>
+                    <span class="team-role">Founder & Managing Partner</span>
+                </div>
+                <!-- Leader 2 -->
+                <div class="team-card glass-card">
+                    <div class="team-img-wrapper">
+                        <div class="team-img-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <h3>Sanjay Seth</h3>
+                    <span class="team-role">Director - Institutional Deals</span>
+                </div>
+                <!-- Leader 3 -->
+                <div class="team-card glass-card">
+                    <div class="team-img-wrapper">
+                        <div class="team-img-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <h3>Rahul Lamba</h3>
+                    <span class="team-role">VP - Premium Residential Markets</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Elite Endorsements</span>
+                <h2 class="section-title">Client Transformations</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card">
+                    <i class="fas fa-quote-left q-icon quote-icon"></i>
+                    <p class="testimonial-text">"Chetan's market advice was incredibly accurate. He helped us avoid several overpriced properties and pointed us toward a beautiful residential floor that has turned out to be an amazing investment."</p>
+                    <div class="client-info">
+                        <h4>Rajesh Aggarwal</h4>
+                        <p>Industrialist, Pitampura</p>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <i class="fas fa-quote-left q-icon quote-icon"></i>
+                    <p class="testimonial-text">"Their local market knowledge is truly outstanding. The team showed deep professionalism and guided us smoothly through a complex high-value real estate transaction with ease."</p>
+                    <div class="client-info">
+                        <h4>Dr. Amit Sharma</h4>
+                        <p>Senior Consultant Surgeon</p>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <i class="fas fa-quote-left q-icon quote-icon"></i>
+                    <p class="testimonial-text">"We worked closely with Sanjay and Rahul to sell our ancestral property. They managed everything with complete privacy and delivered a highly successful closing that exceeded our expectations."</p>
+                    <div class="client-info">
+                        <h4>Meenakshi Gupta</h4>
+                        <p>Luxury Real Estate Investor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Visit Booking Form Section -->
+    <section id="booking" class="section">
+        <div class="container">
+            <div class="booking-container glass-card">
+                <div class="section-title-wrapper" style="margin-bottom: 50px;">
+                    <span class="section-subtitle">Private Concierge</span>
+                    <h2 class="section-title" style="font-size: 36px;">Schedule A Site Visit</h2>
+                </div>
+                <form class="booking-form" onsubmit="event.preventDefault(); alert('Thank you for choosing luxury. Our elite private concierge desk will contact you within the next 2 hours.');">
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="E.g., Devendra Malhotra" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Contact Number</label>
+                        <input type="tel" class="form-control" placeholder="E.g., +91 99999 99999" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Date</label>
+                        <input type="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Interest Profile</label>
+                        <select class="form-control" required>
+                            <option value="">Select Asset Class</option>
+                            <option value="buy">Luxury Property Purchase</option>
+                            <option value="sell">Premium Asset Liquidation</option>
+                            <option value="rent">High-End Residential Rental</option>
+                            <option value="collab">Developer Collaboration</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-full">
+                        <label class="form-label">Special Portfolio Requirements</label>
+                        <textarea class="form-control" rows="4" placeholder="Mention any specific metrics, locations, or design preferences..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Confirm VIP Concierge Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Information Integrity</span>
+                <h2 class="section-title">Frequently Answered Queries</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h3 class="faq-question">Which specific locations do you specialize in?</h3>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <div class="faq-answer">We focus primarily on Pitampura and premium residential neighborhoods across North West Delhi, offering specialized expertise in the area's top builder floors, luxury bungalows, and high-value commercial properties.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h3 class="faq-question">What is your model for developer collaborations?</h3>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <div class="faq-answer">We act as strategic advisors connecting high-net-worth landholders with Tier-A developers. Our team structures clear, balanced agreements that focus on maximizing premium spatial value and ensuring efficient timeline commitments.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-header">
+                        <h3 class="faq-question">Do you assist NRI clients with safe property investments?</h3>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-body">
+                        <div class="faq-answer">Yes, we provide end-to-end management for NRI investors, handling legal due diligence, tax documentation guidance, and full remote reporting to ensure smooth asset management from anywhere in the world.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <div>
+                        <span class="section-subtitle">Immediate Engagement</span>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Let's Connect</h2>
+                        <p style="color: var(--text-dark); font-weight: 300;">Connect directly with our senior leadership desk for private consultations regarding your real estate investments.</p>
+                        
+                        <ul class="contact-details-list">
+                            <li class="contact-detail-item">
+                                <i class="fas fa-phone contact-item-icon"></i>
+                                <div class="contact-item-text">
+                                    <h4>Primary Hot-line</h4>
+                                    <a href="tel:+919810348888">+91 98103 48888</a>
+                                </div>
+                            </li>
+                            <li class="contact-detail-item">
+                                <i class="fas fa-envelope contact-item-icon"></i>
+                                <div class="contact-item-text">
+                                    <h4>Encrypted Electronic Mail</h4>
+                                    <a href="mailto:chetannarang8888@gmail.com">chetannarang8888@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="contact-detail-item">
+                                <i class="fas fa-map-marker-alt contact-item-icon"></i>
+                                <div class="contact-item-text">
+                                    <h4>Headquarters</h4>
+                                    <p style="font-size: 20px;">Pitampura, New Delhi, India</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="contact-buttons-wrapper">
+                        <a href="https://wa.me/919810348888" target="_blank" class="btn btn-whatsapp" style="width: 100%;"><i class="fab fa-whatsapp" style="margin-right: 10px;"></i> Chat With Chetan Narang</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Luxury Dark Themed Map Placeholder -->
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13994.475440618062!2d77.12351235541991!3d28.70102430000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d6a6239121%3A0xc3b84ff79793f77c!2sPitampura%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; filter: grayscale(1) invert(0.92) contrast(1.2);" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-copyright">
+                    &copy; 2026 Chetan Narang Properties. All Rights Reserved. Designed for Ultra-High-Net-Worth Security.
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#hero">Privacy Policy</a></li>
+                    <li><a href="#hero">Terms of Engagement</a></li>
+                    <li><a href="#hero">Regulatory Credentials</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Frontend Functional JavaScript -->
+    <script>
+        // Sticky Header & Active Navigation link tracking logic
+        const header = document.getElementById('main-header');
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            // Scroll class for luxury micro-blur effect
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Track active section and update navigation highlight
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Mobile responsive dropdown menu logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenuList = document.getElementById('nav-menu-list');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenuList.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navMenuList.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu auto on link selection
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenuList.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Accordion functionality for FAQ UI
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const headerElement = item.querySelector('.faq-header');
+            headerElement.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                faqItems.forEach(i => i.classList.remove('active'));
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
